@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Samuel Gipson</title>
+        <meta name="description" content="The homepage of Samuel Gipson">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Samuel Gipson</h1>
+            <h2>Web Designer, East Lansing, MI</h2>
+        </header>
+		
+        <div id="map-location" data-0="background-image:url(img/color_map.jpg);opacity:0;" 
+        data-350="background-image:url(img/color_map.jpg);opacity:1;" data-750="opacity:0;">
+        </div>
+		
+        <nav data-0="position:absolute;top:800px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+            <ul>
+				<div data-0="margin-top: -200px;" data-200="margin-top:0px;">
+                	<li><a href="#about">About</a></li>
+               		<li><a href="#web_design">Web Design</a></li>
+              	  	<li><a href="#graphic_design">Graphic Design</a></li>
+          			<li><a href="#contact">Contact</a></li>
+				</div>
+            </ul>
+        </nav>
+        <article>
+		<div  data-0="margin-top: -200px;" data-200="margin-top:0px;">
+		
+		    <section id="about">
+                <h3>About Sam</h3>
+                <p>I am a junior at Michigan State University pursuing two majors; Advertising and Media & Information. Overall I am learning the fundamentals of graphic, print, and web design. In the future I want to be a front-end web developer working mostly in HTML CSS and JavaScript. In my spare time I like to learn from CodeAcademy.com, TeamTreehouse.com, and develop designs in Adobe Illustrator or InDesign. I've always had a passion for design, but recently learning some HTML and CSS has taking me even further. A typical day for me is to start out with some exercise and make sure I have a goal of what I want accomplished for the day as well as how much time to spend on each project.  Setting goals for myself has increased the amount of work I can complete as well as give me more free time on the weekends!  That way I have more time to spend with my fiancé as well as watch Netflix, play video games, and hang out with friends.</p>
+            </section>
+
+            <section id="web_design">
+                <h3>Web Design</h3>
+					<ul class="gallery">
+						<a target="_blank"href="links/week1/howiwork.html"><li><img alt="Web Design" src="img/web1.jpg"></li></a>
+						<a target="_blank"href="links/week2/index.html"><li><img alt="Web Design" src="img/web2.jpg"></li></a>
+						<a target="_blank"href="links/week4/index.html"><li><img alt="Web Design" src="img/web3.jpg"></li></a>	
+						<a target="_blank"href="http://www.samuelgipson.com"><li><img alt="Web Design" src="img/web4.jpg"></li></a>
+						<a target="_blank"href="links/week3/Assignment/index.html"><li><img alt="Web Design" src="img/web5.jpg"></li></a>	
+					</ul>
+            </section>
+
+            <section id="graphic_design">
+                <h3>Graphic Design</h3>
+					<ul class="gallery">
+						<a target="_blank" href="links/graphic/mead.pdf"><li><img alt="Graphic Design" src="img/graphic1.jpg"></li></a>
+						<a target="_blank" href="links/graphic/vday.pdf"><li><img alt="Graphic Design" src="img/graphic2.jpg"></li></a>
+						<a target="_blank" href="links/graphic/sochi.pdf"><li><img alt="Graphic Design" src="img/graphic3.jpg"></li></a>
+						<a target="_blank" href="links/graphic/logo.pdf"><li><img alt="Graphic Design" src="img/graphic4.jpg"></li></a>
+						<a target="_blank" href="links/graphic/bengal.pdf"><li><img alt="Graphic Design" src="img/graphic5.jpg"></li></a>			
+					</ul>
+            </section>
+
+            <section id="contact">
+                <h3>Contact Me</h3>
+                <p>If you'd like to contact me for web or graphic design work feel free to email me or give me a call!</p>
+				<p><a href="mailto:"gipsonsa@msu.edu">Gipsonsa@msu.edu</a></p>
+				<p><a href="tel:"1-574-298-1441">574.298.1441</a></p>
+            </section>
+		</div>
+        </article>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+        <script src="js/vendor/skrollr.menu.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+		    if ($(window).width() > 600) {
+		        
+            var s = skrollr.init();
+			
+			skrollr.menu.init(s, {
+			    //skrollr will smoothly animate to the new position using `animateTo`.
+			    animate: true,
+
+			    //The easing function to use.
+			    easing: 'sqrt',
+
+			    //Multiply your data-[offset] values so they match those set in skrollr.init
+			    scale: 2,
+
+			    //How long the animation should take in ms.
+			    duration: function(currentTop, targetTop) {
+			        //By default, the duration is hardcoded at 500ms.
+			        return 500;
+			    },
+			});
+		}
+        </script>
+
+    </body>
+</html>
